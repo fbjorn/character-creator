@@ -1,6 +1,12 @@
 import React from 'react';
 
 import {
+  numFaces,
+  numHeads,
+  numBodies,
+  numAccessories,
+  skinColors,
+  clothesColors,
   defaultSkinColor,
   defaultClothesColor,
 } from '../../constants';
@@ -28,6 +34,19 @@ function App() {
     defaultClothesColor
   );
 
+  function randomizeCharacter() {
+    setHead(Math.floor(Math.random() * numHeads))
+    setBody(Math.floor(Math.random() * numBodies))
+    setFace(Math.floor(Math.random() * numFaces))
+    setAccessory(Math.floor(Math.random() * numAccessories))
+
+    const skinId = Math.floor(Math.random() * skinColors.length)
+    setSkinColor(skinColors[skinId].color)
+
+    const clothId = Math.floor(Math.random() * clothesColors.length)
+    setClothesColor(clothesColors[clothId].color)
+  }
+
   return (
     <main className={styles.characterEditor}>
       <MaxWidthWrapper className={styles.maxWidthWrapper}>
@@ -38,6 +57,7 @@ function App() {
             controls below. What sort of adventure will you embark on?{' '}
           </p>
         </header>
+        <div className={styles.decorativeBackground}/>
         <div className={styles.controlColumn}>
           <ControlPane
             title="Bodies"
@@ -75,6 +95,12 @@ function App() {
             currentOption={clothesColor}
             handleSelectOption={setClothesColor}
           />
+          <button
+              className={styles.controlButton}
+              onClick={randomizeCharacter}
+          >
+              Random
+          </button>
         </div>
       </MaxWidthWrapper>
 

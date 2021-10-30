@@ -8,6 +8,7 @@
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +25,38 @@
 }
 
 .characterWrapper {
+  display: block;
+  width: 35%;
+  min-height: 500px;
+  position: fixed;
+  top: 8%;
+  left: 60%;
 }
 
 .controlColumn {
+  width: 50%;
+  position: relative;
+}
+
+.decorativeBackground {
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  background-color: hsl(195deg, 20%, 86%);
+  position: fixed;
+}
+
+.controlButton {
+  display: block;
+  margin: 16px auto;
+  width: 150px;
+  height: 50px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: 2px solid hsl(0deg, 0%, 5%);
+  background: white;
+  outline-offset: 2px;
+  border-radius: 1px;
+  cursor: pointer;
 }
