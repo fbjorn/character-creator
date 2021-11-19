@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/character-creator/static/css/main.e11778c7.chunk.css",
+    "main.js": "/character-creator/static/js/main.af304a8c.chunk.js",
+    "main.js.map": "/character-creator/static/js/main.af304a8c.chunk.js.map",
+    "runtime-main.js": "/character-creator/static/js/runtime-main.5c5f82b0.js",
+    "runtime-main.js.map": "/character-creator/static/js/runtime-main.5c5f82b0.js.map",
+    "static/js/2.9e9a6fa5.chunk.js": "/character-creator/static/js/2.9e9a6fa5.chunk.js",
+    "static/js/2.9e9a6fa5.chunk.js.map": "/character-creator/static/js/2.9e9a6fa5.chunk.js.map",
+    "index.html": "/character-creator/index.html",
+    "static/css/main.e11778c7.chunk.css.map": "/character-creator/static/css/main.e11778c7.chunk.css.map",
+    "static/js/2.9e9a6fa5.chunk.js.LICENSE.txt": "/character-creator/static/js/2.9e9a6fa5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c5f82b0.js",
+    "static/js/2.9e9a6fa5.chunk.js",
+    "static/css/main.e11778c7.chunk.css",
+    "static/js/main.af304a8c.chunk.js"
+  ]
+}
